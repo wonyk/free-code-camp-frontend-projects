@@ -1,0 +1,39 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+}
+
+#title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#description {
+  margin: 0 8px;
+}
+
+#scale {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 13px;
+}
+
+#tooltip {
+  background-color: #272822;
+  border: solid;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  color: #66c3af;
+  font-size: 85%;
+}

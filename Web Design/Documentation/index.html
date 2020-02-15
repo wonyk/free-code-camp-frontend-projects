@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Introduction to Python 3</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" property="og:description"
+    content="Dive into the basics of Python 3 by starting with learning from this documentation.">
+  <meta property="og:title" content="Introduction to Python 3">
+  <link rel='stylesheet' type='text/css' href='css/index.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script type='text/javascript' src='js/index.js'></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+  <div class='topbar'>
+    <button class='open-nav' onclick='openNav()'>☰</button>
+  </div>
+  <nav id='navbar'>
+    <button class='close-nav' onclick='closeNav()'>X</button>
+    <img src='images/python-logo-generic.svg' alt='Python Logo' class='logo' />
+    <!-- <img src='https://drive.google.com/uc?id=14G4Cxmiww7QSiE-3KNGifoCYlmpWw594' alt='Python Logo' class='logo' /> -->
+    <header>
+      Python 3 Docs
+    </header>
+    <div class='links'>
+      <h2>Introduction</h2>
+      <ul>
+        <li>
+          <a href='#About' class='nav-link'>
+            About
+          </a>
+        </li>
+        <li>
+          <a href='#Getting_Started' class='nav-link'>
+            Getting Started
+          </a>
+        </li>
+      </ul>
+      <h2>Variables &amp; Types</h2>
+      <ul>
+        <li>
+          <a href='#Variables' class='nav-link'>
+            Variables
+          </a>
+        </li>
+        <li>
+          <a href='#Numbers' class='nav-link'>
+            Numbers
+          </a>
+        </li>
+        <li>
+          <a href='#Strings' class='nav-link'>
+            Strings
+          </a>
+        </li>
+      </ul>
+      <h2>Conditions &amp; Loops</h2>
+      <ul>
+        <li>
+          <a href='#Conditions' class='nav-link'>
+            Conditions
+          </a>
+        </li>
+        <li>
+          <a href='#If_Else' class='nav-link'>
+            If Else
+          </a>
+        </li>
+        <li>
+          <a href='#While_Loops' class='nav-link'>
+            While Loops
+          </a>
+        </li>
+        <li>
+          <a href='#For_Loops' class='nav-link'>
+            For Loops
+          </a>
+        </li>
+        <li>
+          <a href='#Functions' class='nav-link'>
+            Functions
+          </a>
+        </li>
+      </ul>
+      <h2>Data Structures</h2>
+      <ul>
+        <li>
+          <a href='#Lists' class='nav-link'>
+            Lists
+          </a>
+        </li>
+        <li>
+          <a href='#Tuplets' class='nav-link'>
+            Tuplets
+          </a>
+        </li>
+        <li>
+          <a href='#Sets' class='nav-link'>
+            Sets
+          </a>
+        </li>
+      </ul>
+      <h2>Acknowledgements</h2>
+      <ul>
+        <li>
+          <a href='#References' class='nav-link'>
+            References
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id='main-doc'>
+    <section class='main-section' id='About'>
+      <header>
+        About
+      </header>
+      <p>
+        Python is an easy to learn, powerful programming language which serves as a beginner friendly introduction to
+        programming - specifically Object-Oriented Programming (OOP). It was created by Guido van Rossum and released in
+        1991. Python's design allows for easy code readability by using whitespace, making it ideal for projects of any
+        size on numerous platforms such as:
+      </p>
+      <p>
+        <ul>
+          <li>
+            Creating web applications. Python frameworks like Flask and Django allow users to create softwares easily
+            and quickly.
+          </li>
+          <li>
+            Machine learning. Stock prediction and picking, spam detection and image recongition can be done today using
+            Python modules like Tensorflow.
+          </li>
+          <li>
+            Browser automation. "Automate the boring stuff with Python" is an online free book to teach users how to
+            automate everyday tasks.
+          </li>
+          <li>
+            Handle big data through analytics. Python provides powerful scientific and numerical computing.
+          </li>
+          <li>
+            Connect to database systems such as MongoDB through a Python driver.
+          </li>
+        </ul>
+      </p>
+      <p>
+        This documentation is a concise introduction to many of Python's most basic yet essential features and would
+        give readers a good idea of Python's language and coding style such as using newlines and indentations instead
+        of semicolons and brackets used in other popular languages.
+      </p>
+    </section>
+
+    <section class='main-section' id='Getting_Started'>
+      <header>
+        Getting Started
+      </header>
+      <p>
+        To begin, you could use an online Python IDE and compiler such as <a href='https://repl.it/languages/python3'
+          class='web-link' target='_blank'>repl.it</a>. Once you are ready, let us write our first Python code and press
+        run.
+      </p>
+      <div class='highlight'>
+        <code class='line'>
+          print("Hello World!")
+        </code>
+      </div>
+      <p>
+        In other languages where using indentations (whitespaces) in code for better readability, in Python it is a
+        necessity. Since Python does not use brackets, indentations represent a block of code. This is done by pressing
+        either tab or space, but the standard indentation is 4 spaces.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span># This is a comment, marked out by hashtags '#'</span>
+          <span># This will work as intended:</span>
+          <span>>>> if 10 > 1:</span>
+          <span>>>> &emsp;print('Ten is really bigger than one.')</span>
+          <span># This will not work and will produce an error:</span>
+          <span>>>> if 10 > 1:</span>
+          <span>>>> print('Ten is bigger than one, but will not print')</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Variables'>
+      <header>
+        Variables
+      </header>
+      <p>
+        Variables are used to store data values. There is no requirement to declare variables or their type before using
+        since every variable is an object. It can even change type after being set.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> x = 15 # Starts off as a number</span>
+          <span>>>> y = 'Apples'</span>
+          <span>>>> print(x)</span>
+          <span class='output'>15</span>
+          <span>>>> print(y)</span>
+          <span class='output'>Apples</span>
+          <span>>>> x = 'Tasty' # Changed to a String</span>
+          <span>>>> print(x)</span>
+          <span class='output'>Tasty</span>
+        </code>
+      </div>
+      <p>
+        You could also assign value to multiple variables in one single line. You can assign multiple various names to
+        variables, which are all case-sensitive. <br>For example, myName is not the same as MyName.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> variableFruit, variableName, variableHobby = 'Apple', 'Mike', 'Programming'</span>
+          <span>>>> print(variableFruit + variableName + variableHobby)</span>
+          <span class='output'>Apple Mike Programming</span>
+        </code>
+      </div>
+      <p>
+        As seen above, Python allows for simple operators such as adding strings or numbers but mixing operators between
+        numbers and strings are not supported.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> one = 1</span>
+          <span>>>> hello = 'hello'</span>
+          <span>>>> print(one + hello)</span>
+          <span># This will trigger an error.</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Numbers'>
+      <header>
+        Numbers
+      </header>
+      <p>
+        The Python interpreter supports integers, floats and complex numbers. We will run through the most commonly used
+        integers and floats. Integers, or Int, is a whole number without decimals. A floating number, on the other hand,
+        contains decimals.<br> You can use Python like a calculator using simple operators like plus (+), minus (-),
+        multiply (*) and divide (/).
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> width = 20</span>
+          <span>>>> height = 10</span>
+          <span>>>> area = width * height</span>
+          <span>>>> print(area)</span>
+          <span class='output'>200</span>
+          <span>>>> 10 / 5 # Division always returns a float</span>
+          <span class='output'>2.0</span>
+        </code>
+      </div>
+      <p>
+        You can mix integers and operators and even convert from one type to another.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> 8 * 2.45 + 3</span>
+          <span class='ouput'>22.6</span>
+          <span>>>> float = float(10) # convert int 10 to a float</span>
+          <span>>>> print(float)</span>
+          <span class='output'>10.0</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Strings'>
+      <header>
+        Strings
+      </header>
+      <p>
+        Strings are defined either with single or double quotes. You can also assign multiline strings by using triple
+        quotes. Often, the use of double quotes is preferred to allow usage of apostrophes.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> string = "You're the best!"</span>
+          <span>>>> print(string)</span>
+          <span class='output'>You're the best!</span>
+          <span>>>> print("""Hello,</span>
+          <span>...I am a multi line string""")</span>
+          <span class='output'>Hello,</span>
+          <span class='output'>I am a multi line string</span>
+        </code>
+      </div>
+      <p>
+        Previously, we showed that we cannot use operators mixing variable integers and strings. However, we can use
+        operators to concat (glue) strings and repeat using plus (+) and multiple (*) respectively. This only works on
+        string literals and not variables.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> 3 * "haha" + " so funny!"</span>
+          <span class='output'>'hahahahahaha so funny!'</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Conditions'>
+      <header>
+        Conditions
+      </header>
+      <p>
+        Python supports a wide range of conditions derieved from mathematics. They are commonly used in "if statements"
+        and loops. A few examples are equals (==), not equals (!=), less than (&lt;), greater than (&gt;), less than or
+        equal
+        (&lt;=) and more than or equal (&gt;=). The coparisons will return a boolean of either True or False.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> x = 2 # single '=' sets the variable</span>
+          <span>>>> print(x == 2) # double '==' is used for comparisons</span>
+          <span class='output'>True</span>
+          <span>>>> print(x &gt;= 3)</span>
+          <span class='output'>False</span>
+          <span>>>> print(x != 3)</span>
+          <span class='output'>True</span>
+        </code>
+      </div>
+      <p>
+        Moreover, boolean operators such as 'and' and 'or' allows for complex expressions. The following example allows
+        for multiple conditions.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> age = 10</span>
+          <span>>>> name = 'Henry'</span>
+          <span>>>> print(age &gt; 8 and name == 'Henry')</span>
+          <span class='output'>True</span>
+          <span>>>> print(age &gt;= 10 or name == 'Shaw')</span>
+          <span class='output'>True</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='If_Else'>
+      <header>
+        If Else
+      </header>
+      <p>
+        Similar to most languages, Python also has the if statement which is the most commonly known. Simply put, the if
+        statement returns true if all the conditions are met. Python will continue to run through all the conditions
+        until one of them is met, otherwise the else statement will execute if applicable. Key the code in and run it.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>x = int(input("Please enter an integer: ")) # Method to ask for integer input</span>
+          <span>if (x == 0):</span>
+          <span>&emsp;print('You entered a zero')</span>
+          <span>if (x &gt; 0):</span>
+          <span>&emsp;print('You entered a positive number')</span>
+          <span>else:</span>
+          <span>&emsp;print('You entered a negative number')</span>
+          <span>---</span>
+          <span class='output'>Please enter an integer: 10</span>
+          <span class='output'>You entered a positive number</span>
+        </code>
+      </div>
+      <p>
+        Instead of using multiple if statement which will all run sequentially if all the conditions are fulfilled, we
+        can use elif statement which will only run if all the previous statements above returns false. The else
+        condition will be executed last if all statement above returns false.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>a = 200</span>
+          <span>b = 150</span>
+          <span>if (a &gt; b):</span>
+          <span>&emsp;print('a is larger than b')</span>
+          <span>elif (a &gt; b + 10):</span>
+          <span>&emsp;print('While it is true, it will not print because the first statement is true')</span>
+          <span>---</span>
+          <span class='output'>a is larger than b</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='While_Loops'>
+      <header>
+        While Loops
+      </header>
+      <p>
+        While loops repeat as long as the condition provided remains true. To prevent infinite loops, we often use
+        statements like break to stop the loop even if the initial condition is true. The continue statement can skip
+        the current block to proceed on to the next iteration of the loop.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>i = 0 # The while loop is true when i &lt; 50 but stops early once i &gt; 10</span>
+          <span>while i &lt; 50:</span>
+          <span>&emsp;if (i % 2 == 0): # check for even numbers</span>
+          <span>&emsp;&emsp;print(i, 'is an even number')</span>
+          <span>&emsp;i+=1</span>
+          <span>&emsp;if (i &gt; 10):</span>
+          <span>&emsp;&emsp;break</span>
+          <span>---</span>
+          <span class='output'>0 is an even number</span>
+          <span class='output'>2 is an even number</span>
+          <span class='output'>4 is an even number</span>
+          <span class='output'>6 is an even number</span>
+          <span class='output'>8 is an even number</span>
+          <span class='output'>10 is an even number</span>
+        </code>
+      </div>
+      <p>
+        Unlike other popular languages, Python allows the use of else statement within loops. When the conditions
+        provided fails then the code block in else statement will execute. However, else block is skipped only if break
+        is executed.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>i = 0</span>
+          <span>while(i &lt; 4):</span>
+          <span>&emsp;print(i)</span>
+          <span>&emsp;i+=1</span>
+          <span>else:</span>
+          <span>&emsp;print('the value has reached 4 and will stop')</span>
+          <span>---</span>
+          <span class='output'>0</span>
+          <span class='output'>1</span>
+          <span class='output'>2</span>
+          <span class='output'>3</span>
+          <span class='output'>the value has reached 4 and will stop</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='For_Loops'>
+      <header>
+        For Loops
+      </header>
+      <p>
+        A For loop is used to iterate over a sequence (a list or a string), in the order they appear in the sequence.
+        Within the for loop, we can continue to execute a set of statements until the loop ends.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>names = ["John", "Henry", "Jeremy", "Tom"]</span>
+          <span>for name in names:</span>
+          <span>&emsp;if name == "Henry":</span>
+          <span>&emsp;&emsp;continue # skip when name is Henry</span>
+          <span>&emsp;print(name)</span>
+          <span>---</span>
+          <span class='output'>John</span>
+          <span class='output'>Jeremy</span>
+          <span class='output'>Tom</span>
+        </code>
+      </div>
+      <p>
+        We can also use the range function to iterate over a sequence of numbers. The range function is zero based
+        (starts from zero if only one argument is provided). If two arguments are provided, the function is inclusive of
+        the first and exclusive of second argument respectively.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span class='output'># Prints out numbers 0, 1, 2</span>
+          <span>for x in range(3):</span>
+          <span>&emsp;print(x)</span>
+          <span>---</span>
+          <span class='output'># Prints out 3, 4, 5</span>
+          <span>for x in range(3, 6):</span>
+          <span>&emsp;print(x)</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Functions'>
+      <header>
+        Functions
+      </header>
+      <p>
+        A function is a block of code which will only run when it is called. You can pass perameters into a function and
+        also make it return data. We use function to divide our code into useful blocks and bringing order to the code.
+        Benefits include better readability and ability to reuse functions in different part of the code.
+      </p>
+      <p>
+        Functions in Python are declared using the def keyword, followed by the function's name and can also receive
+        arguments (which are optional). To return data, use the return keyword.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>def myFirstFunction():</span>
+          <span>&emsp;print('Hello World!')</span>
+          <span>def sum(a, b): # Here we have two parameters</span>
+          <span>&emsp;return a + b</span>
+          <span>---</span>
+          <span>>>> # Call myFirstFunction</span>
+          <span>>>> myFirstFunction()</span>
+          <span class='output'>Hello World!</span>
+          <span>>>> print('1 + 2 equals', sum(1, 2))</span>
+          <span class='output'>1 + 2 equals 3</span>
+        </code>
+      </div>
+      <p>
+        Functions are also able to utilise a default parameter value if the function is called without a parameter.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>def askName(name = 'Stranger'):</span>
+          <span>&emsp;print('Hello,', name)</span>
+          <span>---</span>
+          <span>>>> askName('John')</span>
+          <span class='output'>Hello, John</span>
+          <span>>>> askName()</span>
+          <span class='output'>Hello, Stranger</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Lists'>
+      <header>
+        Lists
+      </header>
+      <p>
+        There are four main types of collections (arrays) in Python. Each of them has different properties and it is
+        important to choose the right type. We will touch on three of them in detail. To begin, a list is a collection
+        which is ordered and changeable.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> fruits = ['orange', 'apple', 'pear', 'banana']</span>
+          <span>>>> fruits.append('watermelon') # adds to the back of the list</span>
+          <span>>>> fruits</span>
+          <span class='output'>['orange', 'apple', 'pear', 'banana', 'watermelon']</span>
+          <span>>>> fruits.index('banana')</span>
+          <span class='output'>3 # Lists have index starting from zero</span>
+          <span>>>> fruits.reverse()</span>
+          <span>>>> fruits</span>
+          <span class='output'>['watermelon', 'banana', 'pear', 'apple', 'orange']</span>
+          <span>>>> fruits.pop(1) # if no value given, the last item is removed</span>
+          <span class='output'>'banana'</span>
+          <span>>>> fruits</span>
+          <span class='output'>['watermelon', 'pear', 'apple', 'orange']</span>
+        </code>
+      </div>
+      <p>
+        Moreover, we can obtain the value of items by referring to the index number. Similar to arrays, we can obtain
+        the length of the list and loop through it.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> fruits = ['orange', 'apple', 'pear', 'banana']</span>
+          <span>>>> print(len(fruits))</span>
+          <span class='output'>4</span>
+          <span>>>> for fruit in fruits:</span>
+          <span>... &emsp;print(fruit)</span>
+          <span class='output'>orange</span>
+          <span class='output'>apple</span>
+          <span class='output'>pear</span>
+          <span class='output'>banana</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Tuplets'>
+      <header>
+        Tuplets
+      </header>
+      <p>
+        A tuple consists of a number of values separated by commas. They are enclosed by parentheses and are immutable
+        unlike lists. Similar to lists, they can contain duplicate items and are ordered. Since values in a tuple cannot
+        be changed, any modification actions to the tuple will produce an error.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> fruits = ('orange', 'apple', 'pear', 'banana')</span>
+          <span>>>> fruits[2]</span>
+          <span class='output'>'pear'</span>
+          <span>>>> if "pear" in fruits:</span>
+          <span>... &emsp;print("pear is in the tuple")</span>
+          <span class='output'>pear is in the tuple</span>
+          <span>>>> fruits[2] = 'watermelon'</span>
+          <span class='output'>TypeError: 'tuple' object does not support item assignment</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section class='main-section' id='Sets'>
+      <header>
+        Sets
+      </header>
+      <p>
+        A set is a collection which is both unordered and inindexed and is written using curly brackets. Unlike lists
+        and tuplets, they do not contain duplicate entries while supporting advanced mathematical operations like union.
+        Once a set is created, the items cannot be changed but functions like add or remove are supported.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> fruits = {'orange', 'apple', 'pear', 'banana', 'apple', 'pear'}</span>
+          <span>>>> fruits # duplicates removed</span>
+          <span class='output'>{'orange', 'banana', 'pear', 'apple'}</span>
+          <span>>>> fruits.add('watermelon')</span>
+          <span>>>> fruits</span>
+          <span class='output'>{'banana', 'watermelon', 'orange', 'pear', 'apple'}</span>
+        </code>
+      </div>
+      <p>
+        Advanced mathematical symbols are also supported as shown. A few of them are shown below.
+      </p>
+      <div class='highlight'>
+        <code class='block'>
+          <span>>>> a = set('867283729')</span>
+          <span>>>> b = set('06195628193')</span>
+          <span>>>> a</span>
+          <span class='output'>{'3', '7', '2', '9', '8', '6'}</span>
+          <span>>>> a - b # number in a but not b</span>
+          <span class='output'>{'7'}</span>
+          <span>>>> a & b # number in a and b</span>
+          <span class='output'>{'3', '2', '9', '8', '6'}</span>
+        </code>
+      </div>
+      <p></p>
+    </section>
+
+    <section id='References' class='main-section'>
+      <header>
+        References
+      </header>
+      <p>
+        Thank you to the following tutorials and websites for their wonderful Python tutorials. Without them, this
+        webpage will not be possible:
+      </p>
+      <p>
+        1. <a class='web-link' href='https://www.w3schools.com/python/' target='_blank'>W3Schools Python
+          tutorials</a><br>
+        2. <a class='web-link' href='https://www.learnpython.org/' target='_blank'>LearnPython.org</a><br>
+        3. <a class='web-link' href='https://docs.python.org/3/tutorial/index.html' target="_blank">Official Python
+          Docs</a>
+      </p>
+    </section>
+
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

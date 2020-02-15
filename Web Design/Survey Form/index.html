@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript Framework Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      property="og:description"
+      content="We would like your feedback on the most popular javascript frameworks available right now!"
+    />
+    <meta property="og:title" content="Javascript Framework Survey Form" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="form-background">
+      <h1 id="title">
+        Javascript Framework Survey Form
+      </h1>
+      <p id="description">
+        Whether you are a fan of <strong>React, Angular, Vue</strong> or other
+        popular web frameworks, we would like to know more about your opinion
+        regarding them.
+      </p>
+
+      <form id="survey-form" autocomplete="off">
+        <div class="row">
+          <label for="name" class="required" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="Your name"
+          />
+        </div>
+        <div class="row">
+          <label for="email" class="required" id="email-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Email address"
+          />
+        </div>
+        <div class="row">
+          <label for="years" class="required" id="number-label"
+            >Years as JS programmer</label
+          >
+          <input
+            type="number"
+            name="years"
+            id="number"
+            required
+            min="0"
+            max="50"
+            placeholder="Years programming JS"
+          />
+        </div>
+        <div class="row">
+          <label for="role" class="required">Current Roles</label>
+          <select name="role" id="dropdown">
+            <option value="Student">Student</option>
+            <option value="Freelancer">Freelancer</option>
+            <option value="part-time">Part Time Job</option>
+            <option value="full-time">Full Time Job</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="gender" class="required">Gender</label>
+          <div class="column">
+            <div class="radio">
+              <input type="radio" name="gender" value="male" />Male
+            </div>
+            <div class="radio">
+              <input type="radio" name="gender" value="female" />Female
+            </div>
+            <div class="radio">
+              <input type="radio" name="gender" value="others" />Others
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label for="framework"
+            >Tick the Frameworks that you would recommend to others:</label
+          >
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="React" />React
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="Vue" />Vue.js
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="Angular" />Angular
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="Ember" />Ember.js
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="Meteor" />Meteor
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="Mithril" />Mithril
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="NodeJS" />NodeJS
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="Polymer" />Polymer
+          </div>
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              name="framework"
+              value="Backbone"
+            />Backbone.js
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" name="framework" value="Others" />Others
+          </div>
+        </div>
+        <div class="row" id="textarea">
+          <label for="comments">Any Comments</label>
+          <textarea
+            name="comments"
+            rows="4"
+            placeholder="Do you have any feedback or comments about the Javascript frameworks?"
+          ></textarea>
+        </div>
+        <div class="row">
+          <input type="submit" id="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

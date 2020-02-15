@@ -1,0 +1,86 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #212121;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 70%;
+  height: 70%;
+  min-width: 1075px;
+  min-height: 504px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1075px) {
+  body {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-height: 504px) {
+  body {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+
+#title {
+  text-align: center;
+}
+
+.barChart {
+  text-align: center;
+}
+
+.bar {
+  fill: #0277bd;
+}
+
+.bar:hover {
+  fill: #bd4802;
+}
+
+#tooltip {
+  position: absolute;
+  z-index: 5;
+  visibility: hidden;
+  width: 110px;
+  height: 50px;
+  background-color: pink;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 2px;
+  opacity: 0.9;
+}
+
+.description {
+  font-size: 14px;
+}

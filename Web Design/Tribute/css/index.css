@@ -1,0 +1,336 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.7em;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  text-transform: uppercase;
+  color: white;
+  background-color: #2d3e50;
+  z-index: 4;
+  width: 100%;
+  padding: 0.5em;
+}
+
+.header-text {
+  font-weight: 400;
+  font-size: 125%;
+  padding: 0.6em 0 0.6em 1.1em;
+}
+
+.image-parallax {
+  /* background: url(../img/common/tkk.jpg);
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1; */
+  position: relative;
+  top: 3.8em;
+  min-height: 87vh;
+}
+
+#image {
+  position: fixed;
+  min-height: 85vh;
+  height: auto;
+  z-index: -2;
+  background: transparent;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.image-parallax>.container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  width: 50%;
+  height: 40%;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: -1;
+}
+
+#title {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.9em 0 0.9em 0;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 250%;
+  margin: 0em 0 0.8em 0;
+}
+
+#img-caption {
+  background: rgba(255, 255, 255, 0.6);
+  font-weight: 200;
+  font-size: 110%;
+  padding: 0.2em 0 0.2em 0;
+}
+
+.information-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 1em 2em 1em 2em;
+}
+
+.info-title {
+  text-align: center;
+  font-size: 150%;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #34495e;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.stats-box {
+  padding: 1em;
+  width: 33.333%;
+  text-align: justify;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.subhead {
+  color: #1f8dd6;
+  font-size: 18px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.material-icons {
+  margin-right: 7px;
+}
+
+#tribute-info {
+  background-color: #2d3e50;
+  width: 100%;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  background-color: white;
+  width: 6px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+}
+
+.timeline>.container {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  padding: 10px 50px;
+}
+
+.timeline>.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 1;
+  border: 4px solid rgb(255, 111, 0);
+  top: 15px;
+  right: -20px;
+}
+
+.left {
+  left: 0;
+}
+
+/* Trick to create css triangles by using borders on a rectangle with no width and height */
+.left::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent transparent white;
+  top: 22px;
+  right: 30.5px;
+}
+
+.right::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent white transparent transparent;
+  top: 22px;
+  left: 30.5px;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -13px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 20px;
+  }
+
+  .container::before {
+    border-color: transparent white transparent transparent;
+    left: 31px;
+  }
+
+  .timeline>.container {
+    width: 100%;
+  }
+
+  .right {
+    left: 0;
+  }
+
+  .left::after,
+  .right::after {
+    left: 7px;
+  }
+
+}
+
+.content {
+  background-color: white;
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.content>div {
+  font-size: 150%;
+  font-weight: 800;
+  color: #2d3e50;
+}
+
+.end {
+  background-color: white;
+  color: #2d3e50;
+  font-size: 150%;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.thank {
+  padding: 2em 0.2em 4em 0.2em;
+}
+
+.fixed-footer {
+  position: fixed;
+  background-color: #111111;
+  color: rgb(127, 140, 141);
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.footer {
+  font-size: 110%;
+  font-weight: 120%;
+  padding: 1em 0 1em 0;
+}
+
+.footer>a {
+  color: red;
+}
+
+@media (max-width: 48em) {
+  body {
+    font-size: 13px;
+  }
+
+  .image-parallax>.container {
+    width: 75%;
+  }
+
+  .stats-box {
+    width: 100%;
+  }
+
+  #title {
+    font-size: 20px;
+  }
+
+  #img-caption {
+    font-size: 13px;
+  }
+
+  .footer {
+    font-size: 13px;
+  }
+}

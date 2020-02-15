@@ -1,0 +1,76 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  background-color: #f7f8fa;
+  margin: 0;
+}
+
+#title {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.svg {
+  text-align: center;
+}
+
+#x-axis,
+#y-axis {
+  font-size: 14px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#tooltip {
+  position: absolute;
+  z-index: 15;
+  visibility: hidden;
+  width: 220px;
+  /* height: 75px; */
+  border-radius: 4px;
+  background-color: #232f34;
+  font-size: 12px;
+  color: #ffffff;
+  top: 50px;
+  left: 50px;
+  padding: 5px 10px;
+}
+
+#tooltip > div {
+  font-size: 12px;
+}
+
+.info {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    font-size: 14px;
+  }
+
+  #tooltip {
+    font-size: 10px;
+  }
+
+  #tooltip > div {
+    font-size: 10px;
+  }
+
+  #x-axis,
+  #y-axis {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 12px;
+  }
+}

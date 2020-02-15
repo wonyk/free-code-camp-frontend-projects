@@ -1,0 +1,32 @@
+.title {
+  color: red;
+  padding: 1rem 0 1rem 2rem;
+}
+
+#input {
+  padding: 0;
+}
+
+#main {
+  padding-bottom: 20px;
+  min-height: 100vh;
+}
+
+#editor {
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+#editor:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  margin-top: 10px;
+}

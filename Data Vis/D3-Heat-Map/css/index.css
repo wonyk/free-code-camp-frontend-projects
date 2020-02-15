@@ -1,0 +1,54 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+#x-axis,
+#y-axis {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+}
+
+.label {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+}
+
+.cell:hover {
+  stroke: #000000;
+  stroke-width: 1.7px;
+  stroke-linecap: round;
+}
+
+#tooltip {
+  visibility: hidden;
+  width: 100px;
+  position: absolute;
+  background-color: #232f34;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  z-index: 3;
+  font-size: 12px;
+}
+
+#tooltip::after {
+  content: ' ';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #232f34 transparent transparent transparent;
+}
