@@ -1,0 +1,146 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+  color: #ffffff;
+  background-color: rgb(30, 30, 34);
+}
+
+#intro {
+  text-align: center;
+  padding-top: 3em;
+  font-family: "Lato", sans-serif;
+}
+
+.identicons {
+  width: 100px;
+  height: 100px;
+}
+
+.name {
+  font-size: 200%;
+  margin-bottom: 0;
+}
+
+.ref {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 130%;
+}
+
+.project-panel {
+  padding: 2.5em 7em;
+}
+
+.project-panel > h2 {
+  font-size: 150%;
+}
+
+.project-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.project-tile {
+  background-color: rgb(38, 38, 43);
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  margin-right: 1.6em;
+  margin-bottom: 1.7em;
+  width: 30%;
+}
+
+.project-tile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  padding: 1em 2em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.title > ion-icon {
+  color: transparent;
+  transition: 0.2s;
+}
+
+.project-tile:hover .title > ion-icon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-tile:hover .details {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+  text-align: center;
+  background-color: #121212;
+  padding: 1.5em;
+}
+
+#profile-logo {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+footer > div {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .project-panel {
+    padding: 2.5em 4em;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  body {
+    font-size: 15px;
+  }
+
+  .project-tile {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  body {
+    font-size: 14px;
+  }
+
+  .project-tile {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body {
+    font-size: 20px;
+  }
+}
