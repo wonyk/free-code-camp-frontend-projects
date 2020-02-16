@@ -24,5 +24,32 @@ The CSS has a theoretical support of the 'last 4 versions' on [browserl.ist](htt
 
 For IE9 to IE10, the basic functionalities of displaying the titles, images and links are working. However, the CSS does not seem to be loading properly. There is an issue with the loading of Ionicons and flexbox in IE 10 and below.
 
+Note: This information only applies to the main webpage which showcases my other projects. It does not represent the other websites which are linked. To find out about the individual website's browser support, please refer to their respective READMEs.
+
 The information is correct as of the latest commit. Should there be any discrepencies, please contact me for further arrangements.
 
+## Projects Included
+
+### Responsive Web Design
+
+- Tribute Page ([Source](Web%20Design/Tribute), [Demo](https://wonyk.github.io/free-code-camp-projects/Web%20Design/Tribute/index.html))
+- Survey Form ([Source](Web%20Design/Survey%20Form), [Demo](https://wonyk.github.io/free-code-camp-projects/Web%20Design/Survey%20Form/index.html))
+- Product Landing Page ([Source](Web%20Design/Product%20Page), [Demo](https://wonyk.github.io/free-code-camp-projects/Web%20Design/Product%20Page/index.html))
+- Python 3 Documentation ([Source](Web%20Design/Documentation), [Demo](https://wonyk.github.io/free-code-camp-projects/Web%20Design/Documentation/index.html))
+- Personal Portfolio ([Source](Web%20Design/Portfolio), [Demo](https://wonyk.github.io/free-code-camp-projects/Web%20Design/Portfolio/index.html))
+
+### Front End Libraries
+
+- Random Quote Machine ([Source](Front%20End%20Lib/Random%20Quote), [Demo](https://wonyk.github.io/free-code-camp-projects/Front%20End%20Lib/Random%20Quote/index.html))
+- Markdown Previewer ([Source](Front%20End%20Lib/Markdown%20Previewer), [Demo](https://wonyk.github.io/free-code-camp-projects/Front%20End%20Lib/Markdown%20Previewer/index.html))
+- Drum Machine ([Source](Front%20End%20Lib/Drum%20Machine), [Demo](https://wonyk.github.io/free-code-camp-projects/Front%20End%20Lib/Drum%20Machine/index.html))
+- Online Calculator ([Source](Front%20End%20Lib/Calculator), [Demo](https://wonyk.github.io/free-code-camp-projects/Front%20End%20Lib/Calculator/index.html))
+- Pomodolo Clock ([Source](Front%20End%20Lib/Pomodolo), [Demo](https://wonyk.github.io/free-code-camp-projects/Front%20End%20Lib/Pomodolo/index.html))
+
+### Data Visualisation
+
+- GDP Bar Chart ([Source](Data%20Vis/GDP-Bar-Chart), [Demo](https://wonyk.github.io/free-code-camp-projects/Data%20Vis/GDP-Bar-Chart/index.html))
+- Scatter Plot ([Source](Data%20Vis/D3-Scatter-Plot), [Demo](https://wonyk.github.io/free-code-camp-projects/Data%20Vis/D3-Scatter-Plot/index.html))
+- Heat Map ([Source](Data%20Vis/D3-Heat-Map), [Demo](https://wonyk.github.io/free-code-camp-projects/Data%20Vis/D3-Heat-Map/index.html))
+- Choropleth Map ([Source](Data%20Vis/D3-Choropleth), [Demo](https://wonyk.github.io/free-code-camp-projects/Data%20Vis/D3-Choropleth/index.html))
+- Tree Map ([Source](Data%20Vis/D3-Treemap), [Demo](https://wonyk.github.io/free-code-camp-projects/Data%20Vis/D3-Treemap/index.html))
